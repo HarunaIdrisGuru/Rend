@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gitic | An Open Source Network Developers, Innovators, and Investors</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Get your own code at fontawesome.com-->
+    <script>
+
+</script>
+    <style>
+:root {
+  --baseColor: #606468;
+}
+
+.align {
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  place-items: center;
+}
+
+.grid {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 20rem;
+}
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+:root {
+  --iconFill: var(--baseColor);
+}
+
+.icons {
+  display: none;
+}
+
+.icon {
+  height: 1em;
+  display: inline-block;
+  fill: #606468;
+  fill: var(--iconFill);
+  width: 1em;
+  vertical-align: middle;
+}
+
+:root {
+  --htmlFontSize: 100%;
+  --baseColor: #606468;
+  --bodyBackgroundColor: #2c3338;
+  --bodyColor: var(--baseColor); color: var(--bodyColor);
+  --bodyFontFamily: "Open Sans";
+  --bodyFontFamilyFallback: sans-serif;
+  --bodyFontSize: 0.875rem;
+  --bodyFontWeight: 400;
+  --bodyLineHeight: 1.5;
+  --payment-button: #e6c300;
+  --recieve-button: #d9d9d9;
+  --primary: hsl(255, 30%, 55%)
+}
+
+
+:root {
+  --htmlFontSize: 100%;
+  --bodyBackgroundColor: #2c3338;
+  --bodyColor: var(--baseColor);
+  --bodyFontFamily: "Open Sans";
+  --bodyFontFamilyFallback: sans-serif;
+  --bodyFontSize: 0.875rem;
+  --bodyFontWeight: 400;
+  --bodyLineHeight: 1.5;
+  /* --Line between Colors and HTML-- */
+  --baseColor: #606468;
+  --goldenrodColor: #ffb31a;
+  --iconColor: #1e90ff;
+  --spinColor: #FC3D6D;
+  --backgroundFirst: #0a090d;
+  --backgroundSecond: #fff;
+  --backgroundThird: #eee;
+  --baseColor: #606468;
+  --whiteColor: #f1f1f1;
+  --darkBlueFirst: #0e0e23;
+  --darkBlue: #0e0e18;
+  --goldenrodColor: #ffb31a;
+  --iconColor: #1e90ff;
+  --spinColor: #FC3D6D;
+  --blackColor: #000000;
+  --darkWhite: #eee;
+  --hoverColor: #b3b3b3;
+}
+
+:root {
+  --mainColor: #292929;
+  --baseColor: #606468;
+  --goldenrodColor: #ffb31a;
+  --iconColor: #1e90ff;
+  --spinColor: #FC3D6D;
+  --backgroundFirst: #0d0d0d;
+  --backgroundSecond: #fff;
+  --backgroundThird: #eee;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+  font-size: var(--htmlFontSize);
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* modules/anchor.css */
+
+:root {
+  --anchorColor: #eee;
+}
+
+a {
+  color: #eee;
+  color: var(--anchorColor);
+  outline: 0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
+/* modules/form.css */
+
+:root {
+  --formGap: 0.875rem;
+}
+
+
+:root {
+--payment-button: #e6c300;
+--recieve-button: #d9d9d9;
+}
+
+
+
+
+
+
+
+
+:root {
+  --loginBorderRadus: 0.25rem;
+  --loginColor: #eee;
+
+  --loginInputBackgroundColor: #3b4148;
+  --loginInputHoverBackgroundColor: #434a52;
+
+  --loginLabelBackgroundColor: #363b41;
+
+  --loginSubmitBackgroundColor: #ea4c88;
+  --loginSubmitColor: #eee;
+  --loginSubmitHoverBackgroundColor: #d44179;
+}
+
+/* modules/text.css */
+
+p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.text--center {
+  text-align: center;
+}
+
+
+/*--- BODY SECTION ---*/
+body {
+  background-color: var(--darkBlue);
+  color: var(--bodyColor);
+  font-family: "Open Sans", sans-serif;
+  font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+  font-size: 0.875rem;
+  font-size: var(--bodyFontSize);
+  margin: 0;
+}
+/*--- /BODY SECTION ---*/
+
+
+/*--- NAV SECTION ---*/
+.img {
+  display: inline-block;
+  height: 50px;
+  z-index: 3;
+}
+
+.nav {
+  background: var(--darkBlue);
+box-shadow: 0 4px 30px var(--darkBlue);
+border-bottom: 1px solid var(--darkBlue);
+  height: 60px;
+  font-weight: ;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+.nav > .nav-header {
+  display: inline;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  padding: 18px 8px 18px 8px;
+}
+.nav > .nav-btn {
+  display: none;
+}
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 19px;
+}
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 18px 10px 18px 10px;
+  text-decoration: none;
+  color: #b3b3b3;
+  font-family: "Catamaran", sans-serif;
+}
+
+.nav > .nav-links > a:hover,
+a:focus {
+  transform: translateY(-.2rem);
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: inherit;
+  }
+
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label,
+label:focus {
+  transform: translateY(-.2rem);
+  text-decoration: none;
+}
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 23px;
+    height: 9px;
+    border-top: 2px solid black;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: var(--whiteColor);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+/*--- /NAV SECTION ---*/
+
+
+/*--- HERO SECTION ---*/
+.hero {
+		    background-color: var(--darkBlue);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 80vh;
+			width: 100%;
+			margin-top: 95px;
+			color: #fff;
+			text-align: center;
+		}
+		.hero h1 {
+		    color: #b3b3b3;
+			font-size: 10vw;
+			font-weight: 1000;
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+		}
+		.hero p {
+		    color: #b3b3b3;
+			font-size: 23px;
+			margin: 0;
+			padding: 2rem 0;
+			max-width: 700px;
+		}
+
+  .hero .cta-button {
+  font-size: 18px;
+  display: inline-block;
+  padding: 9px 18px;
+  background-color: #2196F3;
+  box-shadow: 0 4px 30px var(--darkBlue);
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #007bff;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-.2rem);
+}
+/*--- /HERO SECTION ---*/
+
+
+
+/*--- MISSION SECTION ---*/
+/* Remove extra left and right margins, due to padding */
+.features {
+width: 100%;
+padding: 50px;
+margin: 0 -5px;
+}
+/* Clear floats after the columns */
+.features:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33.3333333%;
+  padding: 0 10px;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/* Style cards */
+.card {
+background: #111927;
+box-shadow: 0 4px 30px #0a090d;
+backdrop-filter: blur(6.2px);
+-webkit-backdrop-filter: blur(6.2px);
+border: 1px solid #0a090d;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: left;
+  color: #b3b3b3;
+}
+ .card:hover,
+.card:focus {
+  transform: translateY(-.2rem);
+}
+.icon-container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin: 20px;
+}
+.icon-title {
+  color: var(--blackColor);
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  text-align: left;
+  font-weight: 400;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+.development {
+  fill: #FF5722;
+}
+.collaboration {
+  fill: #2196F3;
+}
+.global {
+  fill: #4CAF50;
+}
+  .mass-btn{
+  font-size: 18px;
+  align-items: left;
+  float: left;
+  text-decoration: none;
+}
+ .mass-btn:hover,
+ .mass-btn:focus {
+  transform: translateY(-.2rem);
+}
+/*--- /MISSION SECTION ---*/
+
+
+.header {
+background: ;
+width: 100%;
+}
+
+.header p {
+color: #000;
+font-size: 25px;
+width: 100%;
+padding: 0px 20px;
+margin-top: 30px;
+}
+
+
+
+
+
+video {
+min-width: 80%;
+min-height: 80%;
+}
+
+
+
+
+
+
+
+
+/*--- STATES SECTION ---*/
+::selection{
+  background: rgba(23,162,184,0.3);
+}
+
+.tabs {
+background: ;
+width: 100%;
+padding: 3px;
+}
+
+main {
+background: #b3b3b3;
+  width: 100%;
+}
+.main-tabs {
+  background: ;
+  width: 90%;
+  margin: 5vh auto;
+  color: black;
+  margin-top: 50px;
+}
+.main-tabs header{
+  font-size: 20px;
+  font-weight: 300;
+  padding-bottom: 0px;
+  float: center;
+}
+.main-tabs nav{
+  background: #111927;
+box-shadow: 0 4px 30px #0a090d;
+backdrop-filter: blur(6.2px);
+-webkit-backdrop-filter: blur(6.2px);
+  color: #fff;
+  border-radius: 30px;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.main-tabs nav label{
+background: ;
+  display: block;
+  height: 100%;
+  width: 80%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  font-size: 17px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+.main-tabs nav label:hover{
+  background: transparent;
+  color: var(--bodyColor);
+  border-radius: 0px;
+}
+#home:checked ~ nav label.home,
+#blog:checked ~ nav label.blog,
+#help:checked ~ nav label.help {
+color: var(--blackColor);
+}
+nav label i{
+  padding-right: 0px;
+}
+nav .slider{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.21);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.8px);
+-webkit-backdrop-filter: blur(4.8px);
+color: #eee;
+border-radius: 30px;
+  position: absolute;
+  height: 100%;
+  width: 33%;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+
+input[type="radio"]{
+  display: none;
+}
+#blog:checked ~ nav .slider{
+  left: 34%;
+}
+#help:checked ~ nav .slider{
+  left: 67%;
+}
+section .tabs-content{
+  display: none;
+  margin: 15px;
+  background: transparent;
+}
+#home:checked ~ section .content-1,
+#blog:checked ~ section .content-2,
+#help:checked ~ section .content-4 {
+  display: block;
+}
+section .tabs-content .title{
+  color: #f2f2f2;
+  font-size: 5.5vw;
+  font-weight: 1000;
+  line-height: 1.1;
+  text-align: center;
+  margin: 5px 0 5px 0;
+}
+section .tabs-content .note {
+color: #777;
+width: 70%;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+}
+.main-tabs svg {
+fill: var(--goldenrodColor);
+width: 25px;
+height: 25px;
+}
+.chat-shake > svg {
+fill: #e6e600;
+width: 25px;
+height: 25px;
+}
+/*  --tabs-button--  */
+.tabs-button {
+padding: 15px;
+}
+
+.ecosystem {
+  background: ;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1426' height='540' preserveAspectRatio='none' viewBox='0 0 1426 540'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1027%26quot%3b)' fill='none'%3e%3cpath d='M1318.76 452.94a7.48 7.48 0 1 0 14.14 4.9z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M462.65 68.16a50.97 50.97 0 1 0-87.06 53.03z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1147.25 193.43 a4.06 4.06 0 1 0 8.12 0 a4.06 4.06 0 1 0 -8.12 0z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M847.91 248.22 a20.43 20.43 0 1 0 40.86 0 a20.43 20.43 0 1 0 -40.86 0z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M176.89 387.87a0.2 0.2 0 1 0 0.28 0.28z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M930.64 77.73a32.62 32.62 0 1 0 52.18 39.16z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M886.65 182.09L929.97 182.09L929.97 225.41L886.65 225.41z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M710.7 490.67L718.68 490.67L718.68 525.25L710.7 525.25z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M949.67 235.75L988.5 235.75L988.5 238.68L949.67 238.68z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M187.94 148.41L190.46 148.41L190.46 167.95L187.94 167.95z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M1297.76 508.15 a22.47 22.47 0 1 0 44.94 0 a22.47 22.47 0 1 0 -44.94 0z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M2.19 473.09L48.81 473.09L48.81 504.78L2.19 504.78z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M714.52 458.84a27.15 27.15 0 1 0 12.54 52.83z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1016.3-1.03a52.12 52.12 0 1 0 54.13 89.08z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1125.6 412.77a33.57 33.57 0 1 0-64.49-18.7z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1114.41 418.23L1119.52 418.23L1119.52 423.34L1114.41 423.34z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M360.04 175.48 a18.25 18.25 0 1 0 36.5 0 a18.25 18.25 0 1 0 -36.5 0z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M30.39 474.24 a2.88 2.88 0 1 0 5.76 0 a2.88 2.88 0 1 0 -5.76 0z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M223.9 498.54 a5.79 5.79 0 1 0 11.58 0 a5.79 5.79 0 1 0 -11.58 0z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1069.42 11.42a6.93 6.93 0 1 0-12.75 5.43z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M1019.96 504.65L1062.14 504.65L1062.14 558.4L1019.96 558.4z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1282.54 236.93L1322.65 236.93L1322.65 277.04L1282.54 277.04z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M130 11.05a9.57 9.57 0 1 0-17.94-6.7z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1151.81 14.8 a22.87 22.87 0 1 0 45.74 0 a22.87 22.87 0 1 0 -45.74 0z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1057.51 366.83a19.3 19.3 0 1 0-31.19 22.75z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1095.23 334.93L1099.14 334.93L1099.14 338.84L1095.23 338.84z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1132.98 106.67a29.93 29.93 0 1 0 58.47-12.82z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M508.11 371.1L545.33 371.1L545.33 371.86L508.11 371.86z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M100.74 286.26a22.56 22.56 0 1 0-7.33-44.52z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M135.94 319.75a28.5 28.5 0 1 0-17.11 54.37z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M924.86 98.3 a50.64 50.64 0 1 0 101.28 0 a50.64 50.64 0 1 0 -101.28 0z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1137.94 360.39L1174.06 360.39L1174.06 381.8L1137.94 381.8z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M217.39 391.71 a36.41 36.41 0 1 0 72.82 0 a36.41 36.41 0 1 0 -72.82 0z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M950.75 145.99L988.92 145.99L988.92 199.54L950.75 199.54z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1027'%3e%3crect width='1426' height='540' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
+  background-position: center;
+  height: 50hv;
+  display: flex;
+  align-items: center;
+}
+
+.ecosystem .ecosystem-content {
+  text-align: left;
+  color: #fff;
+  padding: 0px;
+}
+
+.ecosystem h1 {
+  color: var(--blackColor);
+  font-size: 35px;
+  font-weight: 1000;
+  margin-bottom: 5px;
+}
+
+.ecosystem p {
+  color: var(--baseColor);
+  font-size: 21px;
+  margin-bottom: 25px;
+  max-width: 700px;
+}
+
+.ecosystem .cta-button {
+  display: inline-block;
+  background-color: var(--goldenrodColor);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(74, 67, 67, 0.51);
+  border: none;
+            color: #000;
+            cursor: pointer;
+            font-size: 19px;
+            border-radius: 6px;
+	        padding: 4px 8px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+}
+
+.ecosystem .cta-button:hover {
+  background-color: #e64a19;
+  transform: translateY(-.2rem);
+    text-decoration: none;
+    transition: all 0.8s ease;
+}
+/*--- /STATES SECTION ---*/
+
+/*--- GOVERNANCE SECTION ---*/
+.governance {
+  background-color: #f2f2f2;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1426' height='540' preserveAspectRatio='none' viewBox='0 0 1426 540'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1027%26quot%3b)' fill='none'%3e%3cpath d='M1318.76 452.94a7.48 7.48 0 1 0 14.14 4.9z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M462.65 68.16a50.97 50.97 0 1 0-87.06 53.03z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1147.25 193.43 a4.06 4.06 0 1 0 8.12 0 a4.06 4.06 0 1 0 -8.12 0z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M847.91 248.22 a20.43 20.43 0 1 0 40.86 0 a20.43 20.43 0 1 0 -40.86 0z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M176.89 387.87a0.2 0.2 0 1 0 0.28 0.28z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M930.64 77.73a32.62 32.62 0 1 0 52.18 39.16z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M886.65 182.09L929.97 182.09L929.97 225.41L886.65 225.41z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M710.7 490.67L718.68 490.67L718.68 525.25L710.7 525.25z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M949.67 235.75L988.5 235.75L988.5 238.68L949.67 238.68z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M187.94 148.41L190.46 148.41L190.46 167.95L187.94 167.95z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M1297.76 508.15 a22.47 22.47 0 1 0 44.94 0 a22.47 22.47 0 1 0 -44.94 0z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M2.19 473.09L48.81 473.09L48.81 504.78L2.19 504.78z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M714.52 458.84a27.15 27.15 0 1 0 12.54 52.83z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1016.3-1.03a52.12 52.12 0 1 0 54.13 89.08z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1125.6 412.77a33.57 33.57 0 1 0-64.49-18.7z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1114.41 418.23L1119.52 418.23L1119.52 423.34L1114.41 423.34z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M360.04 175.48 a18.25 18.25 0 1 0 36.5 0 a18.25 18.25 0 1 0 -36.5 0z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M30.39 474.24 a2.88 2.88 0 1 0 5.76 0 a2.88 2.88 0 1 0 -5.76 0z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M223.9 498.54 a5.79 5.79 0 1 0 11.58 0 a5.79 5.79 0 1 0 -11.58 0z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1069.42 11.42a6.93 6.93 0 1 0-12.75 5.43z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M1019.96 504.65L1062.14 504.65L1062.14 558.4L1019.96 558.4z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1282.54 236.93L1322.65 236.93L1322.65 277.04L1282.54 277.04z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M130 11.05a9.57 9.57 0 1 0-17.94-6.7z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1151.81 14.8 a22.87 22.87 0 1 0 45.74 0 a22.87 22.87 0 1 0 -45.74 0z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1057.51 366.83a19.3 19.3 0 1 0-31.19 22.75z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1095.23 334.93L1099.14 334.93L1099.14 338.84L1095.23 338.84z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1132.98 106.67a29.93 29.93 0 1 0 58.47-12.82z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M508.11 371.1L545.33 371.1L545.33 371.86L508.11 371.86z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M100.74 286.26a22.56 22.56 0 1 0-7.33-44.52z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M135.94 319.75a28.5 28.5 0 1 0-17.11 54.37z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M924.86 98.3 a50.64 50.64 0 1 0 101.28 0 a50.64 50.64 0 1 0 -101.28 0z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1137.94 360.39L1174.06 360.39L1174.06 381.8L1137.94 381.8z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M217.39 391.71 a36.41 36.41 0 1 0 72.82 0 a36.41 36.41 0 1 0 -72.82 0z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M950.75 145.99L988.92 145.99L988.92 199.54L950.75 199.54z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1027'%3e%3crect width='1426' height='540' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  padding: 0px 20;
+  text-align: center;
+}
+.governance-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.governance h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.governance p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.governance .cta-button {
+  font-size: 18px;
+  display: inline-block;
+  padding: 12px 35px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.governance .cta-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-.2rem);
+}
+/*--- /GOVERNANCE SECTION ---*/
+
+/*--- GOV DESCR SECTION ---*/
+/* Float four columns side by side */
+.descr .column {
+  background-color: none;
+  float: left;
+  width: 50%;
+}
+/* Remove extra left and right margins, due to padding */
+.descr {background: #fff; padding: 0px 40px; margin: 0 2px;}
+
+/* Clear floats after the columns */
+.descr:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .descr .column {
+    background-color: none;
+    width: 100%;
+    display: block;
+    margin-bottom: -20px;
+  }
+}
+
+/* Style the counter cards */
+.descr .card {
+  background-color: none;
+  text-align: center;
+}
+/* ---------------- */
+/* Create two equal columns that floats next to each other */
+.descr .column-row {
+  background-color: none;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 120px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.descr .row-columns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.descr .categories {
+background: #0d0d0d;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+  border: 0.2px solid var(--backgroundFirst);
+font-size: 15px;
+font-weight: 300;
+position: relative;
+cursor: pointer;
+color: #fff;
+border-top: 0.2px solid #000;
+padding: 25px;
+}
+
+.descr .categories svg {
+fill: #ffb31a;
+stroke: #FFF;
+height: 0.935em;
+width: 0.935em;
+}
+/*--- /GOV DESCR SECTION ---*/
+
+/*--- BUDGET SECTION ---*/
+.budget {
+  background-color: #f2f2f2;
+  padding: 200px 0;
+  text-align: center;
+}
+.budget-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.budget h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.budget p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.budget .cta-button {
+  font-size: 18px;
+  display: inline-block;
+  padding: 12px 35px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.budget .cta-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-.2rem);
+}
+/*--- /BUDGET SECTION ---*/
+
+
+
+/*--- FOOTER SECTION ---*/
+footer{
+  position: relative;
+  background: var(--backgroundFirst);
+  width: 100%;
+  bottom: -50px;
+}
+footer::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  background: #000;
+}
+footer .content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 40px 40px 40px 40px;
+}
+footer .content .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+
+
+footer .content .link-boxes{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .content .link-boxes .box{
+  width: calc(100% / 5 - 10px);
+}
+.content .link-boxes .box .link_name{
+  color: #eee;
+  font-size: 18px;
+  font-weight: 0;
+  margin-bottom: 0px;
+  position: relative;
+}
+.link-boxes .box .link_name::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+.content .link-boxes .box li{
+  margin: 6px 0;
+  list-style: none;
+}
+.content .link-boxes .box li a{
+  color: #eee;
+  font-size: 15px;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease
+}
+.content .link-boxes .box li a:hover{
+  transform: translateY(-.2rem);
+  opacity: 1;
+  text-decoration: underline;
+}
+.content .link-boxes .input-box{
+  margin-right: 55px;
+}
+.link-boxes .input-box input{
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #AFAFB6;
+  background: #140B5C;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder{
+  color: #AFAFB6;
+  font-size: 16px;
+}
+.link-boxes .input-box input[type="button"]{
+  background: #fff;
+  color: #140B5C;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="button"]:hover{
+  opacity: 1;
+}
+footer .bottom-details{
+  width: 100%;
+background: #2c303a;
+}
+footer .bottom-details .bottom_text{
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a{
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  footer .content .link-boxes{
+    flex-wrap: wrap;
+  }
+  footer .content .link-boxes .input-box{
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px){
+  footer{
+    position: relative;
+  }
+  .content .top .media-icons a{
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 3 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 60%;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px){
+  footer::before{
+    top: 145px;
+  }
+  footer .content .top{
+    flex-direction: column;
+  }
+  .content .top .media-icons{
+    margin-top: 5px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 2 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 100%;
+  }
+}
+/*--- /FOOTER SECTION ---*/
+    </style>
+</head>
+
+<!-----
+==============
+Nav code=============
+==============================
+------->
+
+<body class="align-body">
+<!--- NAV SECTION --->
+<section id="nav" class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      <span><img src="#">Gitic</span>
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <div class="nav-links">
+    <a href="#Grantpaper">Grantpaper</a>
+    <a href="#Misssion">Constitution</a>
+    <a href="#Features">Budget</a>
+    <a href="#Token">Foundation</a>
+      <a href="https://codepen.io/jo_Geek/" target="_blank" style="box-shadow: 0 4px 30px var(--darkBlue); border: 2px solid rgba(74, 67, 67, 0.51); border-radius: 6px; font-size: 18px; font-weight: 500; color: #b3b3b3; padding: 6px 10px; margin-right: 10px;">Buy On Uniswap &nearr;</a>
+  </div>
+</section>
+<!--- /NAV SECTION --->
+
+
+<!--- HERO SECTION --->
+<section id="hero" class="hero">
+
+     <div class="slide-card">
+      <h1>Build Tools</h1>
+  </div>
+
+     <div class="slide-card">
+      <h1>Open Grant</h1>
+  </div>
+
+     <div class="slide-card">
+      <h1>Hope Invest</h1>
+  </div>
+
+     <div class="slide-card">
+      <h1>Scaled Gov</h1>
+  </div>
+
+     <div class="slide-card">
+      <h1>Open Source</h1>
+  </div>
+
+		<p>
+          Gitic is an open web3 groundbreaking network that brings together developers,
+          innovators, and investors in a decentralized ecosystem to collaborate,
+          innovate, and advance software development through open-source principles.
+        </p>
+         <div>
+    <a href="#" id="build" class="cta-button">Build On Gitic &nearr;</a><!------Empty ID----->
+    <a href="#" id="budget" class="cta-button" style="background: transparent; color: #b3b3b3; border: 2px solid rgba(74, 67, 67, 0.51);">Budget 2024 &nearr;</a>
+     </div>
+	</section>
+<!--- /HERO SECTION --->
+
+
+
+
+
+
+ <!--- Video --->
+      <center>
+      <video src="http://media.w3.org/2010/05/sintel/trailer.mp4" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+   </center>
+        <!--- Video --->
+
+
+
+
+
+
+<!--- FEATURES SECTION --->
+<section class="features">
+<!--- Between Column --->
+  <div class="column">
+    <div class="card">
+<div class="icon-container">
+<svg class="icon development" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+</div>
+        <p class="icon-title" style="color: #FF5722;">Scaled Governance</p>
+        <p>
+            Governance powered by algorithms that allows for flexible and adaptable
+            decision-making within the ecosystem by adjusting the level of influence or decision
+            power given to various stakeholders based on their contributions and roles.
+        </p>
+        <p style="padding: 1px 0px;"><a class="mass-btn" href="#">Read Constitution <b style="color: #FF5722;">&darr;</b></a></p>
+    </div>
+  </div>
+<!--- Between Column --->
+  <div class="column">
+    <div class="card">
+<div class="icon-container">
+<svg class="icon collaboration" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M171.73,232.813A5.381,5.381,0,0,0,176.7,229.5,48.081,48.081,0,0,1,191.6,204.244c1.243-.828,1.657-2.484,1.657-4.141a4.22,4.22,0,0,0-2.071-3.312L74.429,128.473,148.958,85a9.941,9.941,0,0,0,4.968-8.281,9.108,9.108,0,0,0-4.968-8.281L126.6,55.6a9.748,9.748,0,0,0-9.523,0l-100.2,57.966a9.943,9.943,0,0,0-4.969,8.281V236.954a9.109,9.109,0,0,0,4.969,8.281L39.235,258.07a8.829,8.829,0,0,0,4.968,1.242,9.4,9.4,0,0,0,6.625-2.484,10.8,10.8,0,0,0,2.9-7.039V164.5L169.66,232.4A4.5,4.5,0,0,0,171.73,232.813ZM323.272,377.73a12.478,12.478,0,0,0-4.969,1.242l-74.528,43.062V287.882c0-2.9-2.9-5.8-6.211-4.555a53.036,53.036,0,0,1-28.984.414,4.86,4.86,0,0,0-6.21,4.555V421.619l-74.529-43.061a8.83,8.83,0,0,0-4.969-1.242,9.631,9.631,0,0,0-9.523,9.523v26.085a9.107,9.107,0,0,0,4.969,8.281l100.2,57.553A8.829,8.829,0,0,0,223.486,480a11.027,11.027,0,0,0,4.969-1.242l100.2-57.553a9.941,9.941,0,0,0,4.968-8.281V386.839C332.8,382.285,328.24,377.73,323.272,377.73ZM286.007,78a23,23,0,1,0-23-23A23,23,0,0,0,286.007,78Zm63.627-10.086a23,23,0,1,0,23,23A23,23,0,0,0,349.634,67.914ZM412.816,151.6a23,23,0,1,0-23-23A23,23,0,0,0,412.816,151.6Zm-63.182-9.2a23,23,0,1,0,23,23A23,23,0,0,0,349.634,142.4Zm-63.627,83.244a23,23,0,1,0-23-23A23,23,0,0,0,286.007,225.648Zm-62.074,36.358a23,23,0,1,0-23-23A23,23,0,0,0,223.933,262.006Zm188.883-82.358a23,23,0,1,0,23,23A23,23,0,0,0,412.816,179.648Zm0,72.272a23,23,0,1,0,23,23A23,23,0,0,0,412.816,251.92Z"/></svg>
+</div>
+        <p class="icon-title" style="color: #2196F3;">Arrow Ambassadors</p>
+        <p>
+           Gitic open technology program involves appointing ambassadors in different
+            regions to promote Gitic's goals and initiatives, fostering technological
+            innovation and collaboration within specifics geographic areas.
+        </p>
+        <p style="padding: 1px 0px;"><a class="mass-btn" href="#">Apply Ambassador <b style="color: #2196F3;">&#8599;</b></a></p>
+    </div>
+  </div>
+<!--- Between Column --->
+  <div class="column">
+    <div class="card">
+<div class="icon-container">
+<svg class="icon global" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm306.7 69.1L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+</div>
+        <p class="icon-title" style="color: #4CAF50;">Futurism Compass</p>
+        <p>
+            Reseacrh Labs designed to help individuals and organizations navigate and prepare
+            for upcoming technology, including GAI, Web3, Web4, Web5, Web6, and other emerging tech trends,
+            by providing insights and guidance for the future.
+        </p>
+        <p style="padding: 1px 0px;"><a class="mass-btn" href="#">Join Research <b style="color: #4CAF50;">&#8599;</b></a></p>
+    </div>
+  </div>
+</section>
+<!--- /FEATURES SECTION --->
+
+
+
+
+
+
+
+<!--- STATES SECTION --->
+<section class="tabs">
+    <div class="header">
+    <p>Vertical Documention</p>
+</div>
+  <div class="main-tabs">
+  <input type="radio" name="slider" checked id="home">
+  <input type="radio" name="slider" id="blog">
+  <input type="radio" name="slider" id="help">
+  <nav>
+    <label for="home" class="home">
+        Developers
+    </label>
+    <label for="blog" class="blog">
+       Innovators
+    </label>
+    <label for="help" class="help">
+       Investors
+    </label>
+<!--- Between Column --->
+    <div class="slider"></div>
+  </nav>
+<!--- Between Column --->
+  <section>
+    <div class="tabs-content content-1">
+<!--- Between Column --->
+<div class="ecosystem">
+    <div class="ecosystem-content">
+      <h1>Development Continent</h1>
+      <p>
+        Gitic is an open  decentralized network that aims
+        to revolutionize the development, innovation, and investment industries by providing a comprehensive
+        ecosystem for developers, innovators, and investors.
+      </p>
+      <a href="#" class="cta-button" style="background: #FF5722; color: #000; border: 2px solid #FF5722;">Explore more &#8599;</a>
+        <a href="#" class="cta-button" style="background: transparent; border: 2px solid #FF5722;">Join Team &#8599;</a>
+    </div>
+  </div>
+    </div>
+    <div class="tabs-content content-2">
+<!--- Between Column --->
+<div class="ecosystem">
+    <div class="ecosystem-content">
+      <h1>Innovation Continent</h1>
+      <p>
+        Gitic is an open  decentralized network that aims
+        to revolutionize the development, innovation, and investment industries by providing a comprehensive
+        ecosystem for developers, innovators, and investors.
+      </p>
+      <a href="#" class="cta-button" style="background: #2196F3; color: #000; border: 2px solid #2196F3;">Learn more &#8599;</a>
+        <a href="#" class="cta-button" style="background: transparent; border: 2px solid #2196F3;">Apply Grant &darr;</a>
+    </div>
+  </div>
+    </div>
+    <div class="tabs-content content-4">
+<div class="ecosystem">
+    <div class="ecosystem-content">
+      <h1>Investment Continent</h1>
+      <p>
+        Gitic is an open  decentralized network that aims
+        to revolutionize the development, innovation, and investment industries by providing a comprehensive
+        ecosystem for developers, innovators, and investors.
+      </p>
+      <a href="#" class="cta-button" style="background: #4CAF50; color: #000; border: 2px solid #4CAF50;">Learn more &#8599;</a>
+        <a href="#" class="cta-button" style="background: transparent; border: 2px solid #4CAF50;">Apply Stakeholder &#8599;</a>
+    </div>
+  </div>
+    </div>
+<!--- Between Column --->
+  </section>
+</div>
+ </section>
+<!--- /STATES SECTION --->
+
+
+
+
+
+
+
+
+
+<!--- FOOTER SECTION --->
+<footer>
+	<section class="content">
+		<div class="top">
+            <h2></h2>
+		</div>
+		<div class="link-boxes">
+			<ul class="box">
+				<li><a href="#">Ecosystem</a></li>
+				<li><a href="#">Governance</a></li>
+                <li><a href="#">Foundation</a></li>
+			</ul>
+    <ul class="box">
+				<li><a href="#">Grantpaper</a></li>
+				<li><a href="#">Constitution</a></li>
+                <li><a href="#">Budget 2024</a></li>
+			</ul>
+
+	<ul class="box">
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Tiktok</a></li>
+                <li><a href="#">Tiktok</a></li>
+			</ul>
+
+			<ul class="box">
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Instagram</a></li>
+                <li><a href="#">Tiktok</a></li>
+			</ul>
+
+		</div>
+	</section>
+	    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">&copy; 2023 Gitic. All rights reserved.</span>
+        <span class="policy_terms">
+          <a href="#">Powered by Gitic Lab</a>
+
+        </span>
+      </div>
+    </div>
+</footer>
+<!--- /FOOTER SECTION --->
+
+
+
+
+<script>
+    let slideIndex = 0;
+const cards = document.getElementsByClassName('slide-card');
+
+function showNextCard() {
+  for (let i = 0; i < cards.length; i++) {
+    cards[i].style.display = 'none';
+  }
+  slideIndex++;
+  if (slideIndex > cards.length) {
+    slideIndex = 1;
+  }
+  cards[slideIndex - 1].style.display = 'block';
+  setTimeout(showNextCard, 5000); // Change slide every 3 seconds (adjust as desired)
+}
+
+showNextCard();
+
+
+
+
+
+var index = 0;
+var slides = document.querySelectorAll(".slides");
+var dot = document.querySelectorAll(".dot");
+
+function changeSlide(){
+
+  if(index<0){
+    index = slides.length-1;
+  }
+
+  if(index>slides.length-1){
+    index = 0;
+  }
+
+  for(let i=0;i<slides.length;i++){
+    slides[i].style.display = "none";
+    dot[i].classList.remove("active");
+  }
+
+  slides[index].style.display= "block";
+  dot[index].classList.add("active");
+
+  index++;
+
+  setTimeout(changeSlide,5000);
+
+}
+
+changeSlide();
+</script>
+</body>
+</html>
